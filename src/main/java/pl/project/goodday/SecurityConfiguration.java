@@ -38,6 +38,4 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/", "/goldenThought", "/ping").permitAll()
                 .antMatchers(HttpMethod.POST, "/register").permitAll().and().httpBasic();
         }
-
-
 }

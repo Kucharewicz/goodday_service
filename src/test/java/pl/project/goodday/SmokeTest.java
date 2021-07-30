@@ -58,7 +58,4 @@ public class SmokeTest {
         MvcResult result = mockMvc.perform(request).andReturn();
         assertThat(result.getResponse().getContentAsString()).isEqualTo("<h1>Welcome Admin</h1>");
     }
-
-
-
 }
